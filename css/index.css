@@ -1,23 +1,242 @@
-.neko-nav{
+.neko-nav {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 0 24px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }
 
-.left-entry{
+.left-entry {
     display: flex;
 }
 
-.left-entry .entry-title{
+.left-entry .entry-title {
     display: flex;
+    white-space: nowrap; /* 添加此行以确保文字横向分布 */
     align-items: center;
     height: 64px;
-    color: #fff;
+    color: #000000;
     margin-right: 15px;
 }
 
-.left-entry .entry-title img{
+/* nav 左侧入口区域 */
+.left-entry .entry-title img {
     margin-right: 6px;
 }
 
+/* nav 中间搜索区域 */
+input {
+    border: 0 none;
+    outline-style: none;
+    background-color: #f1f2f3; /* 保持灰色背景 */
+    text-align: right; /* 使光标在右侧 */
+}
+
+.center-search-container {
+   
+    height: 40px;
+    padding: 0 24px; /* 修改padding以适应布局 */
+    border-radius: 8px;
+    border: 1px solid #e3e5e7; 
+    background-color: #f1f2f3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.center-search-container:hover {
+    background-color: #f1f2f3; /* 保持灰色背景 */
+}
+
+.center-search-container .nav-search-content {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.center-search-content .nav-search-input {
+    flex: 1;
+    background-color: transparent;
+    line-height: 20px;
+    overflow: hidden;
+    padding-right: 8px;
+}
+
+/* 输入框 */
+.center-search-container .nav-search-button {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.center-search-container .nav-search-button:hover {
+    background-color: #e3e5e7;
+}
+
+/* nav 右侧入口 */
+.right-entry {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.right-entry .header-avatar {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.right-entry .header-avatar a {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: rgb(102, 217, 255);
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    color: #e3e5e7;
+}
+
+.right-entry .right-entry-item{
+    min-width: 50px;
+    margin-right: 4px;
+    
+}
+
+.right-entry .right-entry-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+}
+
+.right-entry-item a span{
+    font-size: 13px;
+}
+
+.right-entry .upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 8px;
+    color:#ffffff;
+    background-color: coral;
+    margin-left: 10px;
+}
+
+.right-entry .upload span{
+    margin-left: 5px;
+}
+
+/* banner 区域 */
+.neko-banner{
+    position: absolute;
+    height:60px;
+    width:100%;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+.neko-banner .logo {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 200px; /* 设置具体的宽度 */
+    height: 200px; /* 设置具体的高度 */
+    transform: translate(-50%, -50%); /* 将logo居中 */
+    object-fit: contain; /* 确保缩小后的logo保持比例 */
+    z-index: -1; /* 确保logo在最底层 */
+}
+
+
+.neko-banner .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.502), rgba(192, 192, 192, 0.248));
+}
+
+/* 频道区域 */
+.neko-channel{   
+    height: 110px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.neko-channel .channel-icons{
+    display: flex;
+}
+
+.neko-channel .channel-icons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.neko-channel .icon-bg{
+
+    margin-top: 14dvh;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.neko-channel .icon-bg_dynamic{
+    background-color: chocolate;
+}
+.neko-channel .icon-bg_popular{
+    background-color: rgb(210, 30, 162);
+}
+.neko-channel .icon-bg_channel{
+    background-color: rgb(30, 210, 99);
+}
+
+.neko-channel span{
+    text-align: center;
+}
+
+/* 左侧频道项列表 */
+.neko-channel .right-channel-container {
+    width:100%;
+    display: flex;
+}
+
+.neko-channel .channel-items_left {
+    margin-top: 90px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    gap: 10px;
+    /* width:100%; */
+}
