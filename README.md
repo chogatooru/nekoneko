@@ -20,7 +20,7 @@ Welcome to **nekoneko~**, a website dedicated to all things cats! This project s
 ## Screenshots
 
  Example of nekoneko~ homepage*
-![Screenshot 2024-07-12 at 12 45 42 PM](https://github.com/user-attachments/assets/e642229a-b745-4dee-96a7-e9cbacdecaee)
+<img width="1490" alt="Screenshot 2024-07-12 at 12 53 31 PM" src="https://github.com/user-attachments/assets/a4faf91f-2156-4a42-bffa-c9a663b964cd">
 
 
 ## Technologies Used
