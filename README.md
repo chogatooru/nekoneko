@@ -1,87 +1,41 @@
-# Nekoneko Website
+# nekoneko~
 
-Welcome to the Nekoneko website project! This is a fun and informative site dedicated to all things cats. The site provides a variety of features and information about different cat breeds, care, nutrition, health, and more.
+Welcome to **nekoneko~**, a website dedicated to all things cats! This project showcases various breeds, care tips, and cat-related content. The design and functionality of this website were inspired by the popular video-sharing platform Bilibili.
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Demo
-
-You can see the live demo of the website [here](https://your-demo-link.com).
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+  - [Images](#images)
 
 ## Features
 
-- **Responsive Navigation**: Easy to use navigation bar with different sections related to cats.
-- **Search Functionality**: Users can search for specific topics or articles.
-- **Dynamic Banner**: Attractive banner featuring the website's logo.
-- **Channel Icons**: Quick access to popular categories and topics.
-- **Login and Membership**: User login and membership options.
-- **User Interaction**: Options for users to post content and interact with the community.
+- **Navigation:** Easily navigate through different sections like breeds, care, nutrition, health, and more.
+- **Dynamic Content:** Discover dynamic and popular content related to cats.
+- **Recommended Videos:** Watch interesting cat videos and explore related articles and podcasts.
+- **User Interaction:** Login to access membership features, messages, favorites, and history.
+- **Responsive Design:** Enjoy a seamless experience across devices of all sizes.
 
-## Technologies
+## Screenshots
+
+ Example of nekoneko~ homepage*
+![Screenshot 2024-07-12 at 12 45 42 PM](https://github.com/user-attachments/assets/e642229a-b745-4dee-96a7-e9cbacdecaee)
+
+
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Installation
+### Images
 
-1. Clone the repository:
+- **Favicon and Menu Icon:**
+- [Flaticon](https://www.flaticon.com/)
+- **Placeholder Images:**
+- [FPO Img](https://fpoimg.com/)
+- [Fakeimg. pl](https://fakeimg.pl/)
+- [FreeImages.com](https://www.freeimages.com/)
 
-    ```bash
-    git clone https://github.com/yourusername/nekoneko-website.git
-    ```
 
-2. Navigate to the project directory:
-
-    ```bash
-    cd nekoneko-website
-    ```
-
-3. Open the `index.html` file in your browser to view the website locally.
-
-## Usage
-
-- Use the navigation bar to explore different sections of the website.
-- Use the search bar to find specific information or articles.
-- Click on the channel icons to quickly access popular topics.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to submit a pull request. Please make sure to follow the guidelines below:
-
-1. Fork the repository.
-2. Create a new branch:
-
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
-
-3. Make your changes and commit them:
-
-    ```bash
-    git commit -m 'Add some feature'
-    ```
-
-4. Push to the branch:
-
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-https://www.flaticon.com/
-https://fpoimg.com/
-https://fakeimg.pl/
-https://www.freeimages.com/
