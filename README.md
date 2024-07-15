@@ -38,4 +38,6 @@ Welcome to **nekoneko~**, a website dedicated to all things cats! This project s
 - [Fakeimg. pl](https://fakeimg.pl/)
 - [FreeImages.com](https://www.freeimages.com/)
 
+## Deployment
 
+This project is deployed on Netlify. You can view the live site at: [nekoneko~ on Netlify](https://neon-lollipop-05a05b.netlify.app/)
