@@ -1,1 +1,23 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - "main"
+      - "release/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './build'
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ nfp_iWz8j7QBsbmDScv5iUx35qrGB8YJThy78ad8 }}
 
