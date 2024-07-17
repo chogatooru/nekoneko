@@ -371,34 +371,36 @@ input {
 }
 
 /* Carousel */
-.recommended-container .carousel-area{
-    grid-row:1/3;
-    grid-column: 1/3;
+.recommended-container .carousel-area {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
     border-radius: 6px;
     overflow: hidden;
     position: relative;
     
 }
 
-.carousel-area img{
+.carousel-area img {
     width: 100%;
-    height: 392px;
+    height: 100%; 
+    object-fit: cover; 
 }
 
-.carousel-area .mask{
+.carousel-area .mask {
     width: 100%;
-    height: 392px;
+    height: 100%; 
     position: absolute;
     top: 0;
-    background: linear-gradient(0,#2f3135 23%,transparent 35%);
+    background: linear-gradient(0, #2f3135 23%, transparent 35%);
     border-radius: 6px;
 }
+
 
 .carousel-area .tools {
     width: 100%;
     left: 0;
     position: absolute;
-    bottom: calc(392px - 254px); 
+    bottom: calc(392px - 368px); 
     padding: 0 15px;
     box-sizing: border-box;
 }
